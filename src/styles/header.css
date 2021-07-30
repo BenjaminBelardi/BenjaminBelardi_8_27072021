@@ -1,18 +1,41 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 3rem;
+    align-items: center;
 }
 
 .kasa-logo{
+    display: flex;
     color : red
 
 }
 
 .kasa-nav{
-   list-style-type: none;
-   width:100%;
    display: flex;
-   justify-content: space-between;
-
+   width: 100%;
 }
+.kasa-nav__link{
+    list-style-type: none;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #ff6060;
+    
+ }
+ .kasa-mg-r3{
+     margin-right:3rem;
+ }
+
+ .kasa-red{
+    color: #ff6060;
+ }
+
+ a{
+     text-decoration: none;
+ }
+
+ a.current{
+     text-decoration: underline;
+     color: #ff6060
+ }

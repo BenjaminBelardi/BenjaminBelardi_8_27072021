@@ -1,0 +1,45 @@
+.kasa-carousel__arrow {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: -1rem;
+    filter:invert();
+  }
+
+.arrow-rotate {
+    transform: rotate(180deg);
+}
+  
+  .kasa-caroussel-container{
+    display: flex;
+    position:relative;
+    /*align-items:center;*/
+    /*justify-content:space-between;*/
+    /* height: 415px;
+    width: 100%; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.kasa-caroussel__img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.right{
+    left:92%;
+
+}
+
+.left{
+
+    left:.5rem;
+
+}
+
+.kasa-caroussel_test p{
+
+    margin-top: -25px;
+    color: white;
+}

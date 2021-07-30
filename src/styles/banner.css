@@ -1,0 +1,23 @@
+.kasa-banner{
+    display: flex;
+    border-radius: 25px;
+    background-color: black;
+    mix-blend-mode: darken;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px 0 100px;
+
+}
+
+.kasa-banner__img{
+    width: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.kasa-banner__txt{
+    position:absolute;
+    color : white;
+    font-size: 1.5rem;
+}

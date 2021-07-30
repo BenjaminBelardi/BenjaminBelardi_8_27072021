@@ -1,0 +1,10 @@
+.kasa-dorpdown-container{
+    display :flex;
+    flex-direction: column;
+    width: 582px;
+}
+
+.kasa-dropdown__list{
+    list-style-type: none;
+
+}

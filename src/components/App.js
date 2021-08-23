@@ -4,13 +4,14 @@ import Header from "./Header";
 import Accueil from "./Accueil";
 import About from "./About";
 import Logement from "./Logement";
+import '../styles/Layout.css'
 
 
 
 function App() {
 
   return (
-      <div className="App">
+      <div className="Layout">
       <Router>
         <Header />
         <Switch>

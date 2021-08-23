@@ -1,6 +1,7 @@
 import React from 'react';
 import star from '../assets/star.svg'
 import starNotLight from '../assets/starnotlight.svg'
+import '../styles/Rating.css'
 
 
 

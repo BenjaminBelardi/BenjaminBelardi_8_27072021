@@ -6,10 +6,16 @@
 
 .kasa-host-container{
     display: flex;
+    float: right;
+    align-items: center;
 }
 
 .kasa-host__name{
     width: 93px;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: right;
     overflow-wrap: normal;
     color :#ff6060;
+    margin-right: 10.5px;
 }

@@ -1,21 +1,25 @@
 .kasa-tag-container{
     display: flex;
-    justify-content: space-between;
-    margin-left: 2rem;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    width: 50%
+    width: 100%
 
 }
 
 
-
 .kasa-tag{
-    width: 100px;
-    border-radius: 20px;
-    height : 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    border-radius: 5px;
+    height : 18px;
     background-color: #FF6060;
     color: white;
+    font-size: .62rem;
+}
 
+.kasa-tag-mr:not(:nth-child(1)){
+    margin-left: .62rem;
 
 }

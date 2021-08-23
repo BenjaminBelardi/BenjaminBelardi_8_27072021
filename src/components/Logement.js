@@ -5,6 +5,7 @@ import Host from './Host'
 import Dropdowns from './Dropdown'
 import Rating from './rating'
 import Tag from './Tag'
+import '../styles/Logement.css'
 
 
 const logementList = require('../datas/logements.json')
@@ -21,24 +22,24 @@ class Logement extends react.Component {
     
     render(){
         return(
-            <div>
-                {logementList.map((logement)=>
+            // <div>
+                logementList.map((logement)=>
                     logement.id === this.id ? (
                     <div>
                         <Carousel key={this.id} imgList={logement.pictures} />
-                        <h1>{logement.title}</h1>
-                        <h3>{logement.location}</h3>
-                        <Host name={logement.host.name} picture={logement.host.picture}/>
+                        <h1 className='color-primary lgt-title-size'>{logement.title}</h1>
+                        <h3 className='color-primary lgt-location-size'>{logement.location}</h3>
                         <Tag list={logement.tags} />
+                        <Host name={logement.host.name} picture={logement.host.picture}/>
                         <Rating rating={logement.rating}/>
                         <div className="">
-                            <Dropdowns title="Description" data={logement.description}/>
-                            <Dropdowns title="Equipement" data={logement.equipments}/>
+                            <Dropdowns title="Description" data={logement.description} />
+                            <Dropdowns title="Equipement" data={logement.equipments} />
                         </div>
                     </div>
                 ):null
-                )}
-            </div>
+                )
+            // </div>
 
         )
     }

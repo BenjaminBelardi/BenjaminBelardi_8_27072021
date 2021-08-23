@@ -1,0 +1,15 @@
+.color-primary{
+    color:#ff6060;
+}
+
+.lgt-title-size{
+  font-size: 1.2rem;
+  font-weight: 500;  
+  margin-bottom: 5px;
+}
+
+.lgt-location-size{
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 10px;  
+  }

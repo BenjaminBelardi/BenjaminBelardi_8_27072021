@@ -1,20 +1,38 @@
 import react from 'react'
 import '../styles/dropdown.css'
+import {ReactComponent as Arrow} from '../assets/arrow_up.svg'
 
 class Dropdowns extends react.Component{
 
+    constructor(props){
+        super(props)
+        this._dropDownClick = this._dropDownClick.bind(this)
+        this.state = { open : false}
+    }
+
+    _dropDownClick(){
+        this.setState((isOpen) => ({
+            open: !isOpen.open
+        }))
+    }
+
     render(){
+        const dropDownOpen = this.state.open ? null : "hidden"
+        
      return(
-        <div className='kasa-dorpdown-container'>
-            <h2>{this.props.title}</h2>
+        <div className='kasa-dropdown-container'>
+            <div className="kasa-dropdown__title">
+                <h2>{this.props.title}</h2>
+                    <Arrow class={`${dropDownOpen === "hidden" ? "arrow_down" : ""}`} onClick={this._dropDownClick}/>
+            </div>
             {Array.isArray(this.props.data) ? (
-            <ul className='kasa-dropdown__list'>
+            <ul className={`kasa-dropdown__list kasa-dropdown__txt ${dropDownOpen}`}>
                 {this.props.data.map((element)=>
                     <li key={element}>{element}</li>
                 )}
             </ul>
             ) : (
-                <p>{this.props.data}</p>
+                <p className={`kasa-dropdown__txt ${dropDownOpen}`}>{this.props.data}</p>
             )}
         </div>
 

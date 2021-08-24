@@ -8,6 +8,7 @@
     display: flex;
     float: right;
     align-items: center;
+    margin: 2rem 0 ;
 }
 
 .kasa-host__name{

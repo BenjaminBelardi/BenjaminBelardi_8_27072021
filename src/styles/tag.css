@@ -11,12 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 84px;
+    min-width: 84px;
     border-radius: 5px;
     height : 18px;
     background-color: #FF6060;
     color: white;
     font-size: .62rem;
+    padding : 0 10px;
 }
 
 .kasa-tag-mr:not(:nth-child(1)){

@@ -12,11 +12,11 @@ class Header extends React.Component{
                 {/* <div className='header'> */}
                     <img src={logo} alt='kasa' className='kasa-logo' />
                     <nav className='kasa-nav'>
-                        <ul className='kasa-nav__link'>
-                            <NavLink exact activeClassName="current" to="/">
+                        <ul className='kasa-nav-list__link'>
+                            <NavLink exact className='nav-link' activeClassName="current" to="/">
                                 <li className='kasa-mg-r1 kasa-red'>Accueil</li>
                             </NavLink>
-                            <NavLink activeClassName="current" to="/about">
+                            <NavLink className='nav-link' activeClassName="current" to="/about">
                                 <li className='kasa-red'>A Propos</li>
                             </NavLink>
                         </ul>

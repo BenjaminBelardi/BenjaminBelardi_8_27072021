@@ -1,0 +1,14 @@
+.kasa-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height : 209px;
+    background-color: black;
+}
+.kasa-footer-logo{
+    fill:  white;
+}
+
+.kasa-footer-container p{
+    color: white;
+}

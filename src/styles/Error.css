@@ -1,0 +1,30 @@
+.kasa-error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ff6060;
+}
+
+ .kasa-error-number{
+     font-size: 6rem;
+     font-weight: 700;
+ }
+ .kasa-error-txt{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 260px;
+    line-height: 25.67px;
+ }
+
+ .kasa-error-link{
+    position: relative;
+    text-align: center;
+    bottom: -150px;
+    text-decoration: underline;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #ff6060
+ }

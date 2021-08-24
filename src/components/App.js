@@ -1,9 +1,11 @@
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer";
 import Accueil from "./Accueil";
 import About from "./About";
 import Logement from "./Logement";
+import Error from "./Error";
 import '../styles/Layout.css'
 
 
@@ -25,9 +27,10 @@ function App() {
             <About />
           </Route>
           <Route path="/">
-            {() => <div style={{textAlign : "center" , color:"red", fontSize :"5rem"}}>Erreur 404</div>}
+            <Error errorNumber="404" />
           </Route>
         </Switch>
+        <Footer />
       </Router>
       </div>
     

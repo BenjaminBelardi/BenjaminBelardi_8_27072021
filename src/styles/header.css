@@ -20,7 +20,7 @@
    /*display: flex;*/
    /*width: 100%;*/
 }
-.kasa-nav__link{
+.kasa-nav-list__link{
     list-style-type: none;
     width:100%;
     display: flex;
@@ -36,11 +36,11 @@
     color: #ff6060;
  }
 
- a{
+.nav-link{
      text-decoration: none;
  }
 
- a.current{
+ .nav-link.current{
      text-decoration: underline;
      color: #ff6060
  }

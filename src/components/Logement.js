@@ -18,8 +18,6 @@ class Logement extends react.Component {
     }
 
 
-
-    
     render(){
         return(
             // <div>
@@ -32,10 +30,8 @@ class Logement extends react.Component {
                         <Tag list={logement.tags} />
                         <Host name={logement.host.name} picture={logement.host.picture}/>
                         <Rating rating={logement.rating}/>
-                        <div className="">
-                            <Dropdowns title="Description" data={logement.description} />
-                            <Dropdowns title="Equipement" data={logement.equipments} />
-                        </div>
+                        <Dropdowns title="Description" data={logement.description} />
+                        <Dropdowns title="Equipement" data={logement.equipments} />
                     </div>
                 ):null
                 )

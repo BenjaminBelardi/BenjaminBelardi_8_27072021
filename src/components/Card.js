@@ -9,7 +9,7 @@ class Card extends react.Component{
     
     render (){
         return (
-                <NavLink key={this.props.logement.id}  to={{
+                <NavLink className='kasa-card-link' key={this.props.logement.id}  to={{
                     pathname : `/logement/${this.props.logement.id}`,
                     state:{
                         logement : true

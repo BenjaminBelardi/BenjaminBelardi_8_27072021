@@ -33,6 +33,7 @@
 .kasa-caroussel__img{
     object-fit: cover;
     border-radius: 10px;
+    background-color: #ff6060;
 }
 
  .right{
@@ -60,3 +61,10 @@
     height: 255px;
 
 }
+
+@media screen and (min-width: 780px){
+    .img-number{
+        display: none;
+    }
+  
+  }

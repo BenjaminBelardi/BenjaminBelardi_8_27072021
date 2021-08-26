@@ -1,5 +1,6 @@
 .kasa-tag-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     width: 100%
@@ -20,7 +21,8 @@
     padding : 0 10px;
 }
 
-.kasa-tag-mr:not(:nth-child(1)){
-    margin-left: .62rem;
+.kasa-tag-mr{
+    margin-right: .62rem;
+    margin-bottom: .62rem;
 
 }

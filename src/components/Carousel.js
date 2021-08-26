@@ -50,7 +50,7 @@ class Carousel extends react.Component {
                 {this.imgList.map((img , index) =>
                     this.state.activeIndex === index ? (
                         <div key={index} className='img-size'>
-                            <img src={img} alt='kasa-card-img' className='kasa-caroussel__img img-size'/>
+                            <img src={img} alt={img} className='kasa-caroussel__img img-size'/>
                             <p className='img-number'>{`${index +1} / ${this.imgList.length}`}</p>
                         </div>
                     ): null

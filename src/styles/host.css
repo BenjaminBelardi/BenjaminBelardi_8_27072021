@@ -6,9 +6,10 @@
 
 .kasa-host-container{
     display: flex;
-    float: right;
+    order: 2;
+    /* float: right; */
     align-items: center;
-    margin: 2rem 0 ;
+    /*margin: 2rem 0 ;*/
 }
 
 .kasa-host__name{

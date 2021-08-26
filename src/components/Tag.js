@@ -8,7 +8,7 @@ class Tag extends react.Component{
         return(
             <div className="kasa-tag-container">
                 {this.props.list.map((name =>
-                    <span hey={name} className="kasa-tag kasa-tag-mr">{name}</span>
+                    <span key={name} className="kasa-tag kasa-tag-mr">{name}</span>
                     ))}
             </div>
         )

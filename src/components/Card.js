@@ -1,6 +1,6 @@
 import react from 'react'
 import {NavLink} from 'react-router-dom'
-import '../styles/card.css'
+import '../styles/Card.css'
 
 
 //const locationsList = require('../datas/logements.json')

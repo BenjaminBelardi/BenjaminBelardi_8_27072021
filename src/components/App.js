@@ -26,7 +26,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/">
+          <Route >
             <Error errorNumber="404" />
           </Route>
         </Switch>

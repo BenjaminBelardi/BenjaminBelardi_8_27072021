@@ -1,0 +1,43 @@
+.kasa-card-container{
+    list-style-type: none;
+    /* background-color: #f7f7f7;
+    border-radius: 25px;*/
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+
+.kasa-card-list:not(:nth-child(1)){
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 780px){
+
+    .kasa-card-container{
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 50px;
+    }
+
+    .kasa-card-list:not(:nth-child(1)){
+        margin-top: 0;
+    }
+
+    .kasa-card-list{
+        margin-bottom: 2rem;
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .kasa-card-list{
+        flex-basis: 30%;
+    }
+
+}

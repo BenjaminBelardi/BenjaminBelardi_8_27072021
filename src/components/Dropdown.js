@@ -20,19 +20,19 @@ class Dropdowns extends react.Component{
         const dropDownOpen = this.state.open ? null : "hidden"
         
      return(
-        <div className='kasa-dropdown-container'>
-            <div className="kasa-dropdown__title">
+        <div className='dropdown-container'>
+            <div className="dropdown__title">
                 <h2>{this.props.title}</h2>
-                    <Arrow class={`${dropDownOpen === "hidden" ? "arrow_down" : ""}`} onClick={this._dropDownClick}/>
+                    <Arrow className={`${dropDownOpen === "hidden" ? "arrow_down" : "arrow_default"}`} onClick={this._dropDownClick}/>
             </div>
             {Array.isArray(this.props.data) ? (
-            <ul className={`kasa-dropdown__list kasa-dropdown__txt ${dropDownOpen}`}>
+            <ul className={`dropdown__list dropdown__txt ${dropDownOpen}`}>
                 {this.props.data.map((element)=>
                     <li key={element}>{element}</li>
                 )}
             </ul>
             ) : (
-                <p className={`kasa-dropdown__txt ${dropDownOpen}`}>{this.props.data}</p>
+                <p className={`dropdown__txt ${dropDownOpen}`}>{this.props.data}</p>
             )}
         </div>
 

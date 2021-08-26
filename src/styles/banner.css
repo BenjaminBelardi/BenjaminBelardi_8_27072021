@@ -1,23 +1,43 @@
-.kasa-banner{
+.kasa-banner-container{
     display: flex;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: black;
     mix-blend-mode: darken;
     align-items: center;
-    justify-content: center;
-    margin: 0 100px 0 100px;
+    justify-content: left;
+    height: 111px;
+    /* margin: 0 100px 0 100px; */
+}
 
+.kasa-banner-acceuil-size{
+    height: 111px;
+}
+
+.kasa-banner-about-size{
+    height: 223px;
 }
 
 .kasa-banner__img{
     width: 100%;
-    opacity: 0.6;
+    height: 100%;
+    opacity: 0.8;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .kasa-banner__txt{
     position:absolute;
     color : white;
     font-size: 1.5rem;
+    width: 217px;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 780px){
+    .kasa-banner__txt{
+        width: auto;
+        
+        margin-left: 0;
+        
+    }
 }

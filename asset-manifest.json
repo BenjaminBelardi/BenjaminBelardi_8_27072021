@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.58cafa67.chunk.css",
+    "main.js": "/kasa/static/js/main.d5e01bde.chunk.js",
+    "main.js.map": "/kasa/static/js/main.d5e01bde.chunk.js.map",
+    "runtime-main.js": "/kasa/static/js/runtime-main.bbee6f59.js",
+    "runtime-main.js.map": "/kasa/static/js/runtime-main.bbee6f59.js.map",
+    "static/js/2.dacb87ce.chunk.js": "/kasa/static/js/2.dacb87ce.chunk.js",
+    "static/js/2.dacb87ce.chunk.js.map": "/kasa/static/js/2.dacb87ce.chunk.js.map",
+    "index.html": "/kasa/index.html",
+    "static/css/main.58cafa67.chunk.css.map": "/kasa/static/css/main.58cafa67.chunk.css.map",
+    "static/js/2.dacb87ce.chunk.js.LICENSE.txt": "/kasa/static/js/2.dacb87ce.chunk.js.LICENSE.txt",
+    "static/media/acceuil_banner.024f945a.png": "/kasa/static/media/acceuil_banner.024f945a.png",
+    "static/media/arrow-forward-ios.9170537e.svg": "/kasa/static/media/arrow-forward-ios.9170537e.svg",
+    "static/media/arrow_up.9e6d0607.svg": "/kasa/static/media/arrow_up.9e6d0607.svg",
+    "static/media/gustavo-alves-YOXSC4zRcxw-unsplash.e8cc81c1.png": "/kasa/static/media/gustavo-alves-YOXSC4zRcxw-unsplash.e8cc81c1.png",
+    "static/media/logo.ac38b36e.svg": "/kasa/static/media/logo.ac38b36e.svg",
+    "static/media/star.9b03bd04.svg": "/kasa/static/media/star.9b03bd04.svg",
+    "static/media/starnotlight.216abeff.svg": "/kasa/static/media/starnotlight.216abeff.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbee6f59.js",
+    "static/js/2.dacb87ce.chunk.js",
+    "static/css/main.58cafa67.chunk.css",
+    "static/js/main.d5e01bde.chunk.js"
+  ]
+}

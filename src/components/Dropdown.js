@@ -17,7 +17,7 @@ class Dropdowns extends react.Component{
     }
 
     render(){
-        const dropDownOpen = this.state.open ? null : "hidden"
+        const dropDownOpen = this.state.open ? '' : "hidden"
         
      return(
         <div className='dropdown-container'>

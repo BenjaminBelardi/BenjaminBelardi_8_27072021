@@ -5,11 +5,11 @@
     mix-blend-mode: darken;
     align-items: center;
     justify-content: left;
-    height: 111px;
+    /* height: 111px; */
     /* margin: 0 100px 0 100px; */
 }
 
-.kasa-banner-acceuil-size{
+.kasa-banner-accueil-size{
     height: 111px;
 }
 
@@ -34,10 +34,24 @@
 }
 
 @media screen and (min-width: 780px){
+    .kasa-banner-container{
+        justify-content: center;
+    }
     .kasa-banner__txt{
+        font-size: 2rem;
         width: auto;
-        
         margin-left: 0;
-        
     }
 }
+
+@media screen and (min-width: 1000px){
+    .kasa-banner-accueil-size{
+        height: 223px;
+    }
+    .kasa-banner__txt{
+        font-size: 3rem;
+    }
+
+}
+
+

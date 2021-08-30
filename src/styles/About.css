@@ -1,7 +1,12 @@
 
 @media screen and (min-width: 780px){
+    .kasa-about-layout{
+        height: 100vh;
+    }
     .kasa-about-dropdown-container{
-     width: 80%;
-     margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto auto auto;
     }
 }

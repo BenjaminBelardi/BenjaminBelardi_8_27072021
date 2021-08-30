@@ -9,14 +9,14 @@
 
 
 .Layout{
-    /*width: 100%;*/
     position: relative;
     margin: 1.2rem 1.2rem 0 1.2rem;
-    height: 100vh;
 }
 
 @media screen and (min-width: 780px){
     .Layout{
+      display: flex;
+      flex-direction: column;
       margin:1.2rem 4rem 0 4rem;
     }
   
@@ -24,7 +24,9 @@
 
   @media screen and (min-width: 1000px){
     .Layout{
-        margin:1.2rem 6.25rem 0 6.25rem;
+        max-width: 1440px;
+        margin: 1.2rem auto 0 auto;
+        /* margin:1.2rem 6.25rem 0 6.25rem; */
       }
   
   }

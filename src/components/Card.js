@@ -15,7 +15,7 @@ class Card extends react.Component{
                         logement : true
                         }
                     }}>
-                    <article>
+                    <article className="card-container">
                         <img src={this.props.logement.cover} alt='kasa-card-img' className='kasa-card__img'/>
                         <p className='kasa-card__txt'>{this.props.logement.title}</p>
                     </article>

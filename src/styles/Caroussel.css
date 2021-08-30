@@ -51,9 +51,7 @@
 }
 
 .img-number{
-    text-align: center;
-    margin-top: -40px;
-    color: white;
+    display: none;
 }
 
 .img-size{
@@ -64,7 +62,10 @@
 
 @media screen and (min-width: 780px){
     .img-number{
-        display: none;
+        display: block;
+        text-align: center;
+        margin-top: -40px;
+        color: white;
     }
   
   }

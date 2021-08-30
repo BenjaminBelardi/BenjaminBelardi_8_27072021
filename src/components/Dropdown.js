@@ -1,5 +1,5 @@
 import react from 'react'
-import '../styles/dropdown.css'
+import '../styles/Dropdown.css'
 import {ReactComponent as Arrow} from '../assets/arrow_up.svg'
 
 class Dropdowns extends react.Component{

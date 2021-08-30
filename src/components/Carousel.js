@@ -45,8 +45,7 @@ class Carousel extends react.Component {
     render(){
         return(
             <div className='kasa-caroussel-container'>
-                 <img src={arrow} alt='kasa-card-img' className='kasa-carousel__arrow left arrow-rotate' onClick={e => this._prevImg(e)}/>
-                 {/* <img src={arrow} alt='kasa-card-img' className='kasa-carousel__arrow right' onClick={e => this._nextImg(e)}/> */}
+                {this.imgList.length > 1 ? <img src={arrow} alt='kasa-card-img' className='kasa-carousel__arrow left arrow-rotate' onClick={e => this._prevImg(e)}/> : null }
                 {this.imgList.map((img , index) =>
                     this.state.activeIndex === index ? (
                         <div key={index} className='img-size'>
@@ -55,7 +54,7 @@ class Carousel extends react.Component {
                         </div>
                     ): null
                 )}
-                { <img src={arrow} alt='kasa-card-img' className='kasa-carousel__arrow right' onClick={e => this._nextImg(e)}/>}
+                {this.imgList.length > 1 ? <img src={arrow} alt='kasa-card-img' className='kasa-carousel__arrow right' onClick={e => this._nextImg(e)}/>: null }
             </div>
         )}
 }   

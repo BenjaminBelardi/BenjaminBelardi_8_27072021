@@ -9,7 +9,9 @@
     flex-direction: column;
     /*flex-wrap: wrap;
 } */
-
+.card-container{
+    position: relative;
+}
 .kasa-card{
     display: flex;
     width:100%;
@@ -20,13 +22,13 @@
 
 .kasa-card__img{
     width: 100%;
-    height: 200px;
+    height: 255px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .kasa-card-link{
-    position: relative;
+    /* position: relative; */
     text-decoration: none;
     text-decoration: none;
     
@@ -34,9 +36,16 @@
 
 .kasa-card__txt{
     position: absolute;
-    top: 170px;
+    bottom: 10px;
     margin-left: 1rem;
     width: 295px;
     font-size: 1.1rem;
     color: white;
+}
+
+
+@media screen and (min-width: 780px){
+    .kasa-card__img{
+        height: 340px;
+    }
 }

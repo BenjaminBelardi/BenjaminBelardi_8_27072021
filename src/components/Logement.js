@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom'
 import Carousel from './Carousel'
 import Host from './Host'
 import Dropdowns from './Dropdown'
-import Rating from './rating'
+import Rating from './Rating'
 import Tag from './Tag'
 import '../styles/Logement.css'
 import Error from './Error'
@@ -43,7 +43,7 @@ class Logement extends react.Component {
 
         return(
             Object.keys(this.rent).length > 0 ? (
-                    <div>
+                    <div className="kasa-logement-layout">
                         <Carousel key={this.id} imgList={this.rent.pictures} />
                         <section className="kasa-logement-header">
                             <section className="kasa-logement-info">

@@ -10,11 +10,9 @@ class Footer extends React.Component {
         return(
             <div className="kasa-footer-container">
                 <Logo className="kasa-footer-logo"/>
-                <p>&copy; 2020 Kasa. All rights reserved </p>
+                <p>&copy; 2021 Kasa. All rights reserved </p>
             </div>
-
         )
     }
-
 }
 export default Footer

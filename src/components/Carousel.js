@@ -9,8 +9,8 @@ class Carousel extends react.Component {
 
         this.imgList = this.props.imgList
         this.imgLength = this.imgList.length - 1
-        this._nextImg = this._nextImg.bind(this)
-        this._prevtImg = this._prevImg.bind(this)
+        // this._nextImg = this._nextImg.bind(this)
+        // this._prevtImg = this._prevImg.bind(this)
         this.state = {
              activeIndex: 0
          }

@@ -24,8 +24,11 @@
   margin-top: 1rem;
 }
 
+.kasa-logement-layout{
+  height: 100vh;
+}
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 768px){
 
   .kasa-logement-header{
     display: flex;
@@ -48,5 +51,4 @@
     display: flex;
     justify-content: space-between;
   }
-
 }

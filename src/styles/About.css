@@ -1,8 +1,10 @@
+.kasa-about-layout{
+    height: 100vh;
+}
 
-@media screen and (min-width: 780px){
-    .kasa-about-layout{
-        height: 100vh;
-    }
+
+@media screen and (min-width: 768px){
+    
     .kasa-about-dropdown-container{
         display: flex;
         flex-direction: column;

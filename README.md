@@ -10,7 +10,7 @@ In the project directory, you can run:
 
 ### `yarn install`
 
-Install the all packadges in packadge.json
+Install all packadges in packadge.json
 
 
 ### `yarn start`

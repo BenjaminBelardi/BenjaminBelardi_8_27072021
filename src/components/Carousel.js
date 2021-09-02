@@ -9,13 +9,14 @@ class Carousel extends react.Component {
 
         this.imgList = this.props.imgList
         this.imgLength = this.imgList.length - 1
-        // this._nextImg = this._nextImg.bind(this)
-        // this._prevtImg = this._prevImg.bind(this)
+        this._nextImg = this._nextImg.bind(this)
+        //this._prevtImg = this._prevImg.bind(this)
         this.state = {
              activeIndex: 0
          }
 }   
 
+// methode 
     _nextImg(e) {
         e.preventDefault()
         let currentIndex = this.state.activeIndex
@@ -29,7 +30,20 @@ class Carousel extends react.Component {
         })   
     }
 
-    _prevImg(e) {
+    // _prevImg(e) {
+    //     e.preventDefault()
+    //     let currentIndex = this.state.activeIndex
+    //     if (currentIndex === 0){
+    //         currentIndex = this.imgLength + 1;
+    //     }
+    //     --currentIndex;
+
+    //      this.setState({
+    //         activeIndex: currentIndex
+    //     })   
+    // }
+    
+    _prevImg = (e) => {
         e.preventDefault()
         let currentIndex = this.state.activeIndex
         if (currentIndex === 0){
@@ -41,6 +55,7 @@ class Carousel extends react.Component {
             activeIndex: currentIndex
         })   
     }
+
 
     render(){
         return(

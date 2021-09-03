@@ -31,16 +31,6 @@ class Logement extends react.Component {
     }
 
     render(){
-
-        // rentList.map((rent)=>{
-        //             if (rent.id === this.id ){
-        //                 logement = rent
-        //             }
-        //             return logement
-        //         })
-
-        // console.table("logementFuond" + Object.keys(logement))
-
         return(
             Object.keys(this.rent).length > 0 ? (
                     <div className="kasa-logement-layout">
@@ -61,23 +51,6 @@ class Logement extends react.Component {
                             <Dropdowns title="Equipement" data={this.rent.equipments} />
                         </section>
                     </div>
-
-                // logementList.map((logement)=>
-                //     logement.id === this.id ? (
-                //     <div>
-                //         <Carousel key={this.id} imgList={logement.pictures} />
-                //         <h1 className='color-primary lgt-title-size mr-top-1r'>{logement.title}</h1>
-                //         <h3 className='color-primary lgt-location-size'>{logement.location}</h3>
-                //         <Tag list={logement.tags} />
-                //         <div className="host-rating-container mr-top-1r">
-                //             <Host name={logement.host.name} picture={logement.host.picture}/>
-                //             <Rating rating={logement.rating}/>
-                //         </div>
-                //         <Dropdowns title="Description" data={logement.description} />
-                //         <Dropdowns title="Equipement" data={logement.equipments} />
-                //     </div>
-                //     ): null
-            //)
             ): <Error errorNumber="404" />
         )
     }

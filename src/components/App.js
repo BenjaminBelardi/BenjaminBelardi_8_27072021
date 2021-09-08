@@ -1,12 +1,13 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
+import Router from './Router';
 import Header from "./Header";
 import Footer from "./Footer";
-import Accueil from "./Accueil";
-import About from "./About";
-import Logement from "./Logement";
-import Error from "./Error";
+// import Accueil from "./Accueil";
+// import About from "./About";
+// import Logement from "./Logement";
+// import Error from "./Error";
 import '../styles/Layout.css';
 
 
@@ -18,9 +19,20 @@ class App extends React.Component {
   render (){
     return (
       <div className="Layout">
-      <Router>
+      <BrowserRouter>
         <Header />
-        <Switch>
+        <Router />
+        <Footer />
+      </BrowserRouter>
+      </div>
+    )
+  } 
+}
+
+export default App
+
+
+/* <Switch>
           <Route exact path="/">
             <Accueil />
           </Route>
@@ -33,18 +45,7 @@ class App extends React.Component {
           <Route >
             <Error errorNumber="404" />
           </Route>
-        </Switch>
-        <Footer />
-      </Router>
-      </div>
-    )
-  } 
-}
-
-export default App
-
-
-
+        </Switch> */
 
 
 
